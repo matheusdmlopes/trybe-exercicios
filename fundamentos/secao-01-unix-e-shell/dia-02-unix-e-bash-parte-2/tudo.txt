@@ -1,0 +1,9 @@
+vermelho
+azul
+amarelo
+marrom
+laranja
+rosa
+morango
+laranja
+banana
