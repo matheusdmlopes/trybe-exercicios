@@ -1,0 +1,30 @@
+#red {
+    font-weight: 700;
+    color: red;
+}
+#green {
+    font-weight: 700;
+    color: green;
+}
+#blue {
+    font-weight: 700;
+    color: blue;
+}
+section p, section ul li {
+    font-size: 18px;
+}
+h2{
+    font-size: 27px;
+}
+h3 {
+    font-size: 24px;
+}
+nav {
+    font-size: 21px;
+}
+html {
+    margin-left: 21px;
+}
+.imagem {
+    width: 450px;
+}
