@@ -8,4 +8,4 @@ while (d1 === d2) {
     d2 = dice();
 }
 
-console.log(d1,d2)
+console.log(d1,d2) 
