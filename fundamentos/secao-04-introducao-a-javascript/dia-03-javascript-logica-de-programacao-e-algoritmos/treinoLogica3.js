@@ -1,10 +1,7 @@
+let a = "Serei a melhor pessoa dev";
+let b = "Esse é meu jeito dev de ser!";
+let num = 2;
+let strings = [a, b];
 
 
-let subtracao = 100;
-let subtracaoResultado = 0
-
-for (let index = 0; index < 100; index += 5) {
-    subtracaoResultado -= 5
-}
-
-console.log(subtracaoResultado)
+console.log((typeof strings) == 'array');
