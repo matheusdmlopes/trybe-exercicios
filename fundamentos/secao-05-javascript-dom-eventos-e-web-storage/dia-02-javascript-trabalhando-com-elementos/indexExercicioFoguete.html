@@ -36,15 +36,13 @@
 
         const buscaQuatro = buscaUm.previousSibling
 
-        const buscaCinco = buscaUm.parentNode.innerText
+        const buscaCinco = buscaUm.nextSibling
         console.log(buscaCinco)
 
-        console.log(document.getElementById("elementoOndeVoceEsta").parentNode.parentElement.innerText)
-
-        const buscaSeis = buscaUm.nextSibling
+        const buscaSeis = buscaUm.nextElementSibling
         console.log(buscaSeis)
 
-        const buscaSete = buscaPai.lastChild.previousSibling
+        const buscaSete = buscaPai.lastElementChild.previousElementSibling
         console.log(buscaSete)
 
     </script>
