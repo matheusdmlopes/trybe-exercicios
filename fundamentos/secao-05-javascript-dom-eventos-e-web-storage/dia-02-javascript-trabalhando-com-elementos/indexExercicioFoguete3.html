@@ -65,11 +65,11 @@
         acessoBody.appendChild(criarTextoH1)
 
         const criarTagMain = createElement('main')
-        criarTagMain.className('main-content')
+        criarTagMain.className = 'main-content'
         acessoBody.appendChild(criarTagMain)
 
         const criarTagSection = createElement('section')
-        criarTagSection.className('center-content')
+        criarTagSection.className = 'center-content'
         criarTagMain.appendChild(criarTagSection)
 
         const criarTagP = createElement('p')
@@ -77,14 +77,17 @@
         criarTagSection.appendChild(criarTagP)
 
         const criarTagSection2 = createElement('section')
-        criarTagSection2.className('left-content')
+        criarTagSection2.className = 'left-content'
         criarTagMain.appendChild(criarTagSection2)
         
         const criarTagSection3 = createElement('section')
-        criarTagSection3.className('right-content')
+        criarTagSection3.className = 'right-content'
         criarTagMain.appendChild(criarTagSection3)
 
-
+        const adicionarImagem = createElement('img')
+        adicionarImagem.src = 'https://picsum.photos/200'
+        adicionarImagem.className = 'small-image'
+        criarTagSection2.appendChild(adicionarImagem)
 
 
 
