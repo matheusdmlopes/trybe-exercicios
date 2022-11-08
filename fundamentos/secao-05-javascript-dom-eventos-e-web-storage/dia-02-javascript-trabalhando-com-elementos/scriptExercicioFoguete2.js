@@ -7,3 +7,6 @@ pai.appendChild(adicionarIrmao)
 
 const criarFilho = document.createElement('section')
 elementoOndeVoceEsta.appendChild(criarFilho)
+
+const primeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho")
+primeiroFilhoDoFilho.appendChild(criarFilho)
