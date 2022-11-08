@@ -57,7 +57,20 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+
+        const acessoBody = document.getElementsByTagName("body")
+
+        const criarTextoH1 = createElement('h1')
+        criarTextoH1.innerText = 'Exercício - JavaScript DOM'
+        acessoBody.appendChild(criarTextoH1)
+
+        const criarTagMain = createElement('main')
+        criarTagMain.className('main-content')
+        acessoBody.appendChild(criarTagMain)
+
+
+
+
     </script>
   </body>
 </html>
