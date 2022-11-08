@@ -10,3 +10,11 @@ elementoOndeVoceEsta.appendChild(criarFilho)
 
 const primeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho")
 primeiroFilhoDoFilho.appendChild(criarFilho)
+
+
+function acessarTerceiroFilho() {
+const terceiroFilhoAcesso = primeiroFilhoDoFilho.appendChild(criarFilho).nextElementSibling.nextElementSibling
+console.log(terceiroFilhoAcesso, 'BOA TARDE')
+}
+
+acessarTerceiroFilho();
