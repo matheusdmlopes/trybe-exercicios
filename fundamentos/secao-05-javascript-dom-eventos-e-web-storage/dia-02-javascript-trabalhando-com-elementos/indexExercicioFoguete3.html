@@ -89,6 +89,16 @@
         adicionarImagem.className = 'small-image'
         criarTagSection2.appendChild(adicionarImagem)
 
+        const criarListaNaoOrdenada = createElement('ul')
+        criarListaNaoOrdenada.innerText = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete','oito','nove','dez']
+        criarTagSection3.appendChild(criarListaNaoOrdenada)
+
+        const criarTextoH3 = createElement('h3')
+
+        for (let i = 0; i <= 3; i+=1) {
+          criarTagMain.appendChild(criarTextoH3)
+        }
+
 
 
     </script>
