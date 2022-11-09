@@ -31,7 +31,7 @@ thirdLi.addEventListener('click', addClasseTech)
 
 input.addEventListener('input', (event) => {
   const classeTech = document.querySelector('.tech')
-  classeTech.innerText = 'Texto alterado'
+  classeTech.innerText = event.target.value
 })
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
@@ -47,7 +47,17 @@ function redirect() {
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
+myWebpage.addEventListener('mouseover', changeColor)
 
+function changeColor() {
+  myWebpage.style.color = 'red'
+}
+
+myWebpage.addEventListener('mouseout', returnColor)
+
+function returnColor() {
+  myWebpage.style.color = 'unset'
+}
 
 // Segue abaixo um exemplo do uso de event.target:
 
