@@ -26,7 +26,15 @@ function criarDiasDoMes() {
         let diaLi = document.createElement('li')
         diaLi.innerHTML = dia
 
-        if ()
+        if (dia === 24 || dia === 31) {
+
+        } else if (dia === 4 || dia === 11 || dia === 18) {
+
+        } else if (dia === 25) {
+
+        } else {
+
+        }
     }
 }
 
