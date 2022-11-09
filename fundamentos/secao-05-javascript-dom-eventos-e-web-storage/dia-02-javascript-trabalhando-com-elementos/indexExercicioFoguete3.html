@@ -60,42 +60,43 @@
 
         const acessoBody = document.getElementsByTagName("body")
 
-        const criarTextoH1 = createElement('h1')
+        const criarTextoH1 = document.createElement('h1')
         criarTextoH1.innerText = 'Exercício - JavaScript DOM'
         acessoBody.appendChild(criarTextoH1)
 
-        const criarTagMain = createElement('main')
+        const criarTagMain = document.createElement('main')
         criarTagMain.className = 'main-content'
         acessoBody.appendChild(criarTagMain)
 
-        const criarTagSection = createElement('section')
+        const criarTagSection = document.createElement('section')
         criarTagSection.className = 'center-content'
         criarTagMain.appendChild(criarTagSection)
 
-        const criarTagP = createElement('p')
+        const criarTagP = document.createElement('p')
         criarTagP.innerText = 'Algum texto qualquer'
         criarTagSection.appendChild(criarTagP)
 
-        const criarTagSection2 = createElement('section')
+        const criarTagSection2 = document.createElement('section')
         criarTagSection2.className = 'left-content'
         criarTagMain.appendChild(criarTagSection2)
         
-        const criarTagSection3 = createElement('section')
+        const criarTagSection3 = document.createElement('section')
         criarTagSection3.className = 'right-content'
         criarTagMain.appendChild(criarTagSection3)
 
-        const adicionarImagem = createElement('img')
+        const adicionarImagem = document.createElement('img')
         adicionarImagem.src = 'https://picsum.photos/200'
         adicionarImagem.className = 'small-image'
         criarTagSection2.appendChild(adicionarImagem)
 
-        const criarListaNaoOrdenada = createElement('ul')
+        const criarListaNaoOrdenada = document.createElement('ul')
         criarListaNaoOrdenada.innerText = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete','oito','nove','dez']
         criarTagSection3.appendChild(criarListaNaoOrdenada)
 
-        const criarTextoH3 = createElement('h3')
+        
 
-        for (let i = 0; i <= 3; i+=1) {
+        for (let i = 1; i <= 3; i+=1) {
+          const criarTextoH3 = document.createElement('h3')
           criarTagMain.appendChild(criarTextoH3)
         }
 
