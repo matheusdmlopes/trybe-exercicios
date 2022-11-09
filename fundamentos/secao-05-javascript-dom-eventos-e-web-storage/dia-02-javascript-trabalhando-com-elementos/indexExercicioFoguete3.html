@@ -90,9 +90,14 @@
         criarTagSection2.appendChild(adicionarImagem)
 
         const criarListaNaoOrdenada = document.createElement('ul')
-        criarListaNaoOrdenada.innerText = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete','oito','nove','dez']
         criarTagSection3.appendChild(criarListaNaoOrdenada)
-
+        const valores = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete','oito','nove','dez']
+        
+      for (let num in valores) {
+        const criarLi = document.createElement('li')
+        criarLi.innerHTML = valores[num]
+        criarListaNaoOrdenada.appendChild(criarLi)
+      }
         
 
         for (let i = 1; i <= 3; i+=1) {
