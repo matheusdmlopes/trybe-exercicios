@@ -27,13 +27,18 @@ function criarDiasDoMes() {
         diaLi.innerHTML = dia
 
         if (dia === 24 || dia === 31) {
+            diaLi.className = 'day holiday'
+            listaDosDias.appendChild(diaLi)
 
         } else if (dia === 4 || dia === 11 || dia === 18) {
-
+            diaLi.className = 'day friday'
+            listaDosDias.appendChild(diaLi)
         } else if (dia === 25) {
-
+            diaLi.className = 'day friday holiday'
+            listaDosDias.appendChild(diaLi)
         } else {
-
+            diaLi.className = 'day'
+            listaDosDias.appendChild(diaLi)
         }
     }
 }
