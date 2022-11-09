@@ -14,9 +14,10 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 
 function addClasseTech(event) {
-  const classeTech = document.querySelector('tech')
+  const classeTech = document.querySelector('.tech')
   classeTech.classList.remove('tech')
   event.target.classList.add('tech')
+  input.value = ''
 }
 
 firstLi.addEventListener('click', addClasseTech)
@@ -31,14 +32,22 @@ thirdLi.addEventListener('click', addClasseTech)
 input.addEventListener('input', (event) => {
   const classeTech = document.querySelector('.tech')
   classeTech.innerText = 'Texto alterado'
-}
+})
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 
+myWebpage.addEventListener('dblclick', redirect)
+
+function redirect() {
+  window.location.replace('https://matheusdmlopes.github.io/')
+}
+
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+
 
 // Segue abaixo um exemplo do uso de event.target:
 
