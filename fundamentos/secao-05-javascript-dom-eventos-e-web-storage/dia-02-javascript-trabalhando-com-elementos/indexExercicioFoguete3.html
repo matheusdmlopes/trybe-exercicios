@@ -101,8 +101,9 @@
         
 
         for (let i = 1; i <= 3; i+=1) {
-          const criarTextoH3 = document.createElement('h3')
-          criarTagMain.appendChild(criarTextoH3)
+          const criarTextoH3 = document.createElement('h3');
+          criarTextoH3.innerHTML = 'Qualquer coisa!' + i;
+          criarTagMain.appendChild(criarTextoH3);
         }
 
         criarTextoH1.className = 'title'
