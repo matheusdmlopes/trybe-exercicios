@@ -43,4 +43,6 @@ function criarDiasDoMes() {
     }
 }
 
+criarDiasDoMes();
+
 
