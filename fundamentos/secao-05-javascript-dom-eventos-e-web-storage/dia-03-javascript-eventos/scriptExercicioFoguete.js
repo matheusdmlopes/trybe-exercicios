@@ -150,3 +150,15 @@ function criarTarefa(tarefa) {
 }
 
 criarTarefa('projeto');
+
+function adicionarLegendaCor(cor) {
+    let tarefasContainer = document.querySelector('.my-tasks')
+    let criarDiv = document.createElement('div')
+
+    criarDiv.className = 'task'
+    criarDiv.style.backgroundColor = cor
+
+    tarefasContainer.appendChild(criarDiv)
+}
+
+adicionarLegendaCor('green');
