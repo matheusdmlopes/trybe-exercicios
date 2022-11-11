@@ -162,3 +162,20 @@ function adicionarLegendaCor(cor) {
 }
 
 adicionarLegendaCor('green');
+
+function selectTask() {
+    //let tarefasContainer = document.querySelector('.my-tasks') Nao serviu pra nd
+    let tarefaSelecionada = document.getElementsByClassName('task selected')
+    let acessoTaskCor = document.querySelector('.task')
+
+    acessoTaskCor.addEventListener('click', (event) => {
+
+        if (tarefaSelecionada.length === 0) {
+            event.target.className = 'task selected'
+        } else {
+            event.target.className = 'task'
+        }
+    });
+}
+
+selectTask();
