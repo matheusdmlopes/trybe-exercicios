@@ -80,3 +80,17 @@ function mostrarFeriados() {
 
 mostrarFeriados();
 
+function botaoSextaFeira(botao) {
+
+    let botaoContainer = document.querySelector('.buttons-container')
+    let createBtn = document.createElement('button')
+
+    createBtn.id = 'btn-friday'
+    createBtn.innerHTML = botao
+
+    botaoContainer.appendChild(createBtn)
+
+}
+
+botaoSextaFeira();
+
