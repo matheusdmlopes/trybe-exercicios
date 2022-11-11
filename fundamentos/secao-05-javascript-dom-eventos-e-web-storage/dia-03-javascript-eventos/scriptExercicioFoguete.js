@@ -68,10 +68,10 @@ function mostrarFeriados() {
     botaoFeriados.addEventListener('click', () => {
 
         for (let i = 0; i < feriadosClasse.length; i += 1) {
-            if (feriadosClasse[i].style.backgroundcolor === corOriginal) {
-                feriadosClasse[i].style.backgroundcolor = corDeFundo
+            if (feriadosClasse[i].style.backgroundColor === corOriginal) {
+                feriadosClasse[i].style.backgroundColor = corDeFundo
             } else {
-                feriadosClasse[i].style.backgroundcolor = corOriginal
+                feriadosClasse[i].style.backgroundColor = corOriginal
             }
         }
 
