@@ -63,5 +63,20 @@ function mostrarFeriados() {
     let botaoFeriados = document.querySelector('#btn-holiday')
     let feriadosClasse = document.querySelector('.holiday')
     let corDeFundo = 'rgb(238,238,238)'
+    let corOriginal = 'white'
+
+    botaoFeriados.addEventListener('click', () => {
+
+        for (let i = 0; i < feriadosClasse.length; i += 1) {
+            if (feriadosClasse[i].style.backgroundcolor === corOriginal) {
+                feriadosClasse[i].style.backgroundcolor = corDeFundo
+            } else {
+                feriadosClasse[i].style.backgroundcolor = corOriginal
+            }
+        }
+
+    })
 }
+
+mostrarFeriados();
 
