@@ -94,3 +94,24 @@ function botaoSextaFeira(botao) {
 
 botaoSextaFeira();
 
+function eventoBotaoSextaFeira(sextas) {
+
+    let botaoSextaFeira = document.querySelector('#btn-friday')
+    let sextasFeiras = document.querySelector('.friday')
+    let textoNovo = 'Texto da sexta-feira alterado!'
+
+    botaoSextaFeira.addEventListener('click', () => {
+        for (let i = 0; i < sextasFeiras.length; i += 1) {
+            if (sextasFeiras[i].innerHTML !== textoNovo) {
+                sextasFeiras[i].innerHTML = textoNovo
+            } else {
+                sextasFeiras[i].innerHTML = sextas[index]
+            }
+        }
+    })
+
+    const sextasFeirasDec = [4, 11, 18, 25]
+
+}
+eventoBotaoSextaFeira(sextasFeirasDec);
+
