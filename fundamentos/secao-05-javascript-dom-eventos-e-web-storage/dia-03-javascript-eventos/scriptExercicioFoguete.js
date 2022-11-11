@@ -138,3 +138,15 @@ function zoomOut() {
 
 zoomIn();
 zoomOut();
+
+function criarTarefa(tarefa) {
+
+    let tarefaSpan = document.createElement('span')
+    let tarefasContainer = document.querySelector('.my-tasks')
+
+    tarefaSpan.innerHTML = tarefa
+    tarefasContainer.appendChild(tarefaSpan)
+
+}
+
+criarTarefa('projeto');
