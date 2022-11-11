@@ -61,7 +61,7 @@ botaoFeriados('Feriados');
 
 function mostrarFeriados() {
     let botaoFeriados = document.querySelector('#btn-holiday')
-    let feriadosClasse = document.querySelector('.holiday')
+    let feriadosClasse = document.querySelectorAll('.holiday')
     let corDeFundo = 'rgb(238,238,238)'
     let corOriginal = 'white'
 
@@ -80,24 +80,26 @@ function mostrarFeriados() {
 
 mostrarFeriados();
 
-function botaoSextaFeira(botao) {
+function botaoSextaFeira(botao2) {
 
     let botaoContainer = document.querySelector('.buttons-container')
     let createBtn = document.createElement('button')
+    let idBotao = 'btn-friday'
 
-    createBtn.id = 'btn-friday'
-    createBtn.innerHTML = botao
+
+    createBtn.innerHTML = botao2
+    createBtn.id = idBotao
 
     botaoContainer.appendChild(createBtn)
 
 }
 
-botaoSextaFeira();
+botaoSextaFeira('Sexta-feira');
 
 function eventoBotaoSextaFeira(sextas) {
 
     let botaoSextaFeira = document.querySelector('#btn-friday')
-    let sextasFeiras = document.querySelector('.friday')
+    let sextasFeiras = document.querySelectorAll('.friday')
     let textoNovo = 'Texto da sexta-feira alterado!'
 
     botaoSextaFeira.addEventListener('click', () => {
@@ -105,13 +107,14 @@ function eventoBotaoSextaFeira(sextas) {
             if (sextasFeiras[i].innerHTML !== textoNovo) {
                 sextasFeiras[i].innerHTML = textoNovo
             } else {
-                sextasFeiras[i].innerHTML = sextas[index]
+                sextasFeiras[i].innerHTML = sextas[i]
             }
         }
     })
 
-    const sextasFeirasDec = [4, 11, 18, 25]
+
 
 }
+let sextasFeirasDec = [4, 11, 18, 25]
 eventoBotaoSextaFeira(sextasFeirasDec);
 
