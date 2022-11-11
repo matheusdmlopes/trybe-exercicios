@@ -118,3 +118,8 @@ function eventoBotaoSextaFeira(sextas) {
 let sextasFeirasDec = [4, 11, 18, 25]
 eventoBotaoSextaFeira(sextasFeirasDec);
 
+function zoomIn() {
+    let dayList = document.getElementsByClassName('day', 'friday', 'holiday')
+
+    dayList.addEventListener('mouseover')
+}
