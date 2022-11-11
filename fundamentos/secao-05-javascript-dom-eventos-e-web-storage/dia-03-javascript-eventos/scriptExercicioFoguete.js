@@ -45,4 +45,23 @@ function criarDiasDoMes() {
 
 criarDiasDoMes();
 
+function botaoFeriados(botao) {
+    let botaoAcesso = document.querySelector('.buttons-container')
+    let createBtn = document.createElement('button')
+    let buttonId = 'btn-holiday'
+
+    createBtn.id = buttonId
+    createBtn.innerHTML = botao
+
+    botaoAcesso.appendChild(createBtn)
+
+}
+
+botaoFeriados('Feriados');
+
+function mostrarFeriados() {
+    let botaoFeriados = document.querySelector('#btn-holiday')
+    let feriadosClasse = document.querySelector('.holiday')
+    let corDeFundo = 'rgb(238,238,238)'
+}
 
