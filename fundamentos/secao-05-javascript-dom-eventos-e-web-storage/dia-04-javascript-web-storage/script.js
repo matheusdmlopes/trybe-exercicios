@@ -18,6 +18,20 @@ window.onload = () => {
         localStorage.setItem('fontSize', size)
     }
 
+    const setLineHeight = (height) => {
+        let conteudo = document.querySelector('.paragraph')
+        conteudo.style.lineHeight = height
+        localStorage.setItem('lineHeight', height)
+    }
+
+    const setFontFamily = (family) => {
+        let conteudo = document.querySelector('.paragraph')
+        conteudo.style.fontFamily = family
+        localStorage.setItem('fontFamily', family)
+    }
+
+    let bgColorButtons = 
+
 
 
 
