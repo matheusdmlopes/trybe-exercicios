@@ -179,3 +179,23 @@ function selectTask() {
 }
 
 selectTask();
+
+function atribuirCor() {
+    let tarefaSelecionada = document.getElementsByClassName('task selected')
+    let acessoTaskCor = document.querySelector('.task')
+    let acessoDias = document.querySelector('#days')
+    let tarefaCor = acessoTaskCor.style.backgroundColor
+
+    acessoDias.addEventListener('click', (event) => {
+        let corDoEvento = event.target.style.color
+
+
+        if (tarefaSelecionada.length > 0 && corDoEvento !== tarefaCor) {
+            let cor = tarefaSelecionada[0].style.backgroundColor
+            event.target.style.color = cor
+        } else if (corDoEvento === tarefaCor) {
+            event.target.style.color = 'rgb(119,119,119)'
+        }
+    })
+}
+atribuirCor();
