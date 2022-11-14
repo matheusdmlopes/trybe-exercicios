@@ -51,6 +51,13 @@ window.onload = () => {
         })
     }
 
+    let lineHeightButtons = document.querySelectorAll('#line-height>button')
+    for (let index = 0; index < lineHeightButtons.length; index += 1) {
+        lineHeightButtons[index].addEventListener('click', (event) => {
+            setLineHeight(event.target.innerHTML)
+        })
+    }
+
 
 
 
