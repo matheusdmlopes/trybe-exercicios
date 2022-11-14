@@ -6,7 +6,7 @@ window.onload = () => {
         localStorage.setItem('backgroundColor', color)
     }
 
-    const fontColor = (color) => {
+    const setFontColor = (color) => {
         let conteudo = document.querySelector('.paragraph')
         conteudo.style.color = color
         localStorage.setItem('fontColor', color)
@@ -37,7 +37,19 @@ window.onload = () => {
         })
     }
 
-    let fontColorButtons = 
+    let fontColorButtons = document.querySelectorAll('#font-color>button')
+    for (let index = 0; index < fontColorButtons.length; index += 1) {
+        fontColorButtons[index].addEventListener('click', (event) => {
+            setFontColor(event.target.innerHTML)
+        })
+    }
+
+    let fontSizeButtons = document.querySelectorAll('#font-size>button')
+    for (let index = 0; index < fontSizeButtons.length; index += 1) {
+        fontSizeButtons[index].addEventListener('click', (event) => {
+            setFontSize(event.target.innerHTML)
+        })
+    }
 
 
 
