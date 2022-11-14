@@ -30,7 +30,15 @@ window.onload = () => {
         localStorage.setItem('fontFamily', family)
     }
 
-    let bgColorButtons = 
+    let bgColorButtons = document.querySelectorAll('#bg-color>button')
+    for (let index = 0; index < bgColorButtons.length; index += 1) {
+        bgColorButtons[index].addEventListener('click', (event) => {
+            setBackgroundColor(event.target.innerHTML)
+        })
+    }
+
+    let fontColorButtons = 
+
 
 
 
