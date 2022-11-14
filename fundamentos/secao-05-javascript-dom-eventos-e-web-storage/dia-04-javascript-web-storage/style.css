@@ -18,3 +18,20 @@ body {
 .paragraph {
     display: flex;
 }
+
+#titulo {
+    display: flex;
+    text-align: center;
+}
+
+#descriçao {
+    display: flex;
+    text-align: center;
+    font-style: italic;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
