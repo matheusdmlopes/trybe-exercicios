@@ -57,6 +57,21 @@ window.onload = () => {
             setLineHeight(event.target.innerHTML)
         })
     }
+    let fontFamilyButtons = document.querySelectorAll('#font-family>button')
+    for (let index = 0; index < fontFamilyButtons.length; index += 1) {
+        fontFamilyButtons[index].addEventListener('click', (event) => {
+            setFontFamily(event.target.innerHTML)
+        })
+    }
+
+    const inicializar = () => {
+        let bgColor = localStorage.getItem('backgroundColor')
+        if (bgColor) setBackgroundColor(bgColor)
+
+        let fColor = localStorage.getItem('fontColor')
+        if (fColor) setFontColor(fColor)
+
+    }
 
 
 
