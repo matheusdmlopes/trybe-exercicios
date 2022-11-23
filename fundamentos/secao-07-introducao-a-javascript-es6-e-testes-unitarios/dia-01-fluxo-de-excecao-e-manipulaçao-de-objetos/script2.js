@@ -47,3 +47,33 @@ const allLessons = {}
 Object.assign(allLessons, { lesson1, lesson2, lesson3 })
 
 console.log(allLessons);
+
+function getNumeroEstudantes(objeto) {
+    let total = 0;
+    const getKeys = Object.keys(objeto)
+
+    for (const index in getKeys) {
+        total += objeto[getKeys[index]].numeroEstudantes
+    }
+    return total
+}
+
+console.log(getNumeroEstudantes(allLessons))
+
+function getKeyValueByNumber(objeto, numero) {
+
+    const valores = Object.values(objeto)[numero]
+    console.log(valores)
+}
+
+getKeyValueByNumber(lesson1, 2)
+
+function verifyIfExists(objeto, chave, valor) {
+    const getEntries = Object.entries(objeto)
+    let isEqual = false
+    for (let index in getEntries) {
+        if (getEntries[index][0] === chave && getEntries[index][1] === valor) isEqual = true
+    } console.log(isEqual)
+}
+
+verifyIfExists(lesson3, 'turno', 'noite')
