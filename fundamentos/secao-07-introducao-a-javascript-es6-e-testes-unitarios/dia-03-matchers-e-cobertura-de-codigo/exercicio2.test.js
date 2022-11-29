@@ -8,4 +8,7 @@ describe('Fazendo os testes', () => {
         expect(printMessage(info)).toMatch('Boas vindas')
         expect(printMessage(info)).toMatch('Margarida')
     })
+    test('crie uma função de teste para validar se a mensagem de erro é lançada caso a função seja chamada com um objeto inválido', () => {
+        expect(() => printMessage()).toThrow(new Error('objeto inválido'))
+    })
 })
