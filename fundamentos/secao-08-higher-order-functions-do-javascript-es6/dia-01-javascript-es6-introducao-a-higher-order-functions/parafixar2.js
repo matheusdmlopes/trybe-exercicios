@@ -25,6 +25,6 @@ const musicas = [
     { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
 ];
 
-const verifyEssaPorra = musicas.find((musica) => musica.id === '31031685')
+const verifyEssaPorra = musicas.find((musica) => musica.id === '31031685');
 
 console.log(verifyEssaPorra);
