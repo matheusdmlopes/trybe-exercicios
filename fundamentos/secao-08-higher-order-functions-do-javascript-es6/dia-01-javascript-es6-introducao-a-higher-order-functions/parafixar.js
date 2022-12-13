@@ -12,3 +12,5 @@ emailListInData.forEach((element, index) => {
     console.log(`Sua posição no array é ${index}`)
 })
 
+
+
