@@ -18,3 +18,21 @@ const multiply = (element) => console.log(element * 2)
 // numbers.forEach((element) => console.log(element * 2))
 
 numbers.forEach(multiply)
+
+const nomes = ['Ricardo', 'Pedro', 'Matheus', 'Robson']
+
+const logica = (letra2, lista) => nomes.some((element) => element[1] === letra2)
+const logica2 = (letra2, lista) => nomes.find((element) => element[1] === letra2)
+
+console.log(logica('a', nomes))
+console.log(logica2('a', nomes))
+
+const grades = {
+    portugues: 'Aprovado',
+    matematica: 'Reprovado',
+    ingles: 'Aprovado',
+};
+
+const verifyGrades = Object.values(grades).every((element) => element === 'Aprovado'); // false
+
+console.log(verifyGrades);
