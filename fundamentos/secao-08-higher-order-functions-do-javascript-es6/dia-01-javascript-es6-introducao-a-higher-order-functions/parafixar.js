@@ -22,7 +22,7 @@ const emailListInData = [
 // Adicione seu código aqui
 
 emailListInData.forEach((element) => {
-    console.log
+    console.log(`O email ${element} está cadastrado em nosso banco de dados!`)
 })
 
 
