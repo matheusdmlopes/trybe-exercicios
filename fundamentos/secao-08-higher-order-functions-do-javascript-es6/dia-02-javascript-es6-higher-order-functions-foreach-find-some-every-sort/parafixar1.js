@@ -7,5 +7,7 @@ const people = [
 ];
 
 // Adicione seu código aqui
+people.sort((a, b) => a.age > b.age ? 1 : -1) // crescente
+people.sort((a, b) => a.age < b.age ? 1 : -1) // descrescente
 
 console.log(people);
