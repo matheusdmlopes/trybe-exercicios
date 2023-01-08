@@ -67,4 +67,9 @@ const fantasyOrScienceFiction = () => {
 
 console.log(fantasyOrScienceFiction())
 
-  // Adicione o código do exercício aqui:
+const oldBooksOrdered = () => {
+    const getData = books.forEach((element) => element.releaseYear)
+    return getData.sort((a, b) => a - b)
+}
+
+console.log(oldBooksOrdered())
