@@ -9,3 +9,9 @@ const listaNumeros = [10, 20, 30, 40];
 const getNumbersAbove20 = listaNumeros.filter((element) => element > 20)
 
 console.log(getNumbersAbove20)
+
+const nomes = ['Roberto', 'Robson', 'Pedro']
+
+nomes.filter((element) => element === 'Robson')
+
+console.log(nomes)
