@@ -87,5 +87,9 @@ console.log(booksByAuthorBirthYear(1920))
 
 
 const fantasyOrScienceFictionAuthors = () => {
-    // escreva seu código aqui
+    const getObjects = books.filter((element) => element.genre === 'Ficção Científica' || element.genre === 'Fantasia').map((element) => element.author.name)
+    getObjects.sort()
+    return getObjects
 }
+
+console.log(fantasyOrScienceFictionAuthors())
