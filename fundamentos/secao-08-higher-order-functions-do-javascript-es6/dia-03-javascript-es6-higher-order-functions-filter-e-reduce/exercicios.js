@@ -93,3 +93,12 @@ const fantasyOrScienceFictionAuthors = () => {
 }
 
 console.log(fantasyOrScienceFictionAuthors())
+
+const oldBooks = () => {
+    const anoAtual = new Date().getFullYear()
+    const getBooks = books.filter((element) => anoAtual - element.releaseYear >= 60)
+
+    return getBooks.map((element) => element.name)
+}
+
+console.log(oldBooks())
