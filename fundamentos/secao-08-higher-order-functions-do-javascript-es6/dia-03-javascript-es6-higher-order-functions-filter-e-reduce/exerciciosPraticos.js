@@ -74,4 +74,13 @@ const getPopulation = () => {
     return getPop
 }
 
-console.log(getPopulation())
+console.log(getPopulation());
+
+const getTotalArea = () => {
+    const getArea = countries.reduce((acc, element) => {
+        return acc + element.area
+    }, 0)
+    return getArea
+}
+
+console.log(getTotalArea());
