@@ -84,3 +84,21 @@ const getTotalArea = () => {
 }
 
 console.log(getTotalArea());
+
+// const expectedResult = {
+//     name: 'American Samoa',
+//     region: 'Oceania',
+//     currencies: [{ code: 'USD', name: 'United States Dollar' }],
+//     capital: 'Pago Pago',
+//     population: 55197,
+//     area: 199
+//   }
+
+const longestName = () => {
+    const getLongestName = countries.reduce((acc, element) => {
+        return element.name.length > acc.name.length ? element : acc
+    })
+    return getLongestName
+}
+
+console.log(longestName());
