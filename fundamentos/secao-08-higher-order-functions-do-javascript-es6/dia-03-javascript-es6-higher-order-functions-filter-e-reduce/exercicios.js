@@ -102,3 +102,11 @@ const oldBooks = () => {
 }
 
 console.log(oldBooks())
+
+const authorWith3DotsOnName = () => {
+    const getObject = books.find((element) => element.author.name[1] === '.' && element.author.name[4] === '.' && element.author.name[7] === '.')
+
+    return getObject.name
+}
+
+console.log(authorWith3DotsOnName())
