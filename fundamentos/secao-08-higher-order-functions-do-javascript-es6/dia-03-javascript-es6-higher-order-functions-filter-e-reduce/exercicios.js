@@ -68,8 +68,11 @@ const fantasyOrScienceFiction = () => {
 console.log(fantasyOrScienceFiction())
 
 const oldBooksOrdered = () => {
-    const getData = books.forEach((element) => element.releaseYear)
-    return getData.sort((a, b) => a - b)
+    const dataAtual = new Date()
+    const anoAtual = dataAtual.getFullYear()
+    const getBooks = books.filter((element) => anoAtual - element.releaseYear > 60)
+
+    return getBooks.sort((a, b) => a.releaseYear - b.releaseYear)
 }
 
 console.log(oldBooksOrdered())
