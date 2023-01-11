@@ -76,3 +76,16 @@ const oldBooksOrdered = () => {
 }
 
 console.log(oldBooksOrdered())
+
+const booksByAuthorBirthYear = (birthYear) => {
+    const getAuthor = books.filter((element) => element.author.birthYear === birthYear)
+        .map((element) => element.name)
+    return getAuthor
+}
+
+console.log(booksByAuthorBirthYear(1920))
+
+
+const fantasyOrScienceFictionAuthors = () => {
+    // escreva seu código aqui
+}
