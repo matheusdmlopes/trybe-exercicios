@@ -13,9 +13,9 @@ class App extends React.Component {
   }
 
   imprimirConsole1 = () => {
-    this.setState({
-      numeroDeCliques1: this.state.numeroDeCliques1 + 1
-    })
+    this.setState((stateAnterior) => ({
+      numeroDeCliques1: stateAnterior.numeroDeCliques1 + 1
+    }))
     console.log('clicou1')
   }
   imprimirConsole2 = () => {
@@ -40,7 +40,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this)
     return <div>
       <button onClick={this.imprimirConsole1}>{this.state.numeroDeCliques1}</button>
       <button onClick={this.imprimirConsole2}>{this.state.numeroDeCliques2}</button>
