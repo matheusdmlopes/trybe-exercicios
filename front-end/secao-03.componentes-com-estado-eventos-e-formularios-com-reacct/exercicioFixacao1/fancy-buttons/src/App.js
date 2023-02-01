@@ -19,15 +19,15 @@ class App extends React.Component {
     console.log('clicou1')
   }
   imprimirConsole2 = () => {
-    this.setState({
-      numeroDeCliques2: this.state.numeroDeCliques2 + 1
-    })
+    this.setState((stateAnterior) => ({
+      numeroDeCliques2: stateAnterior.numeroDeCliques2 + 1
+    }))
     console.log('clicou2')
   }
   imprimirConsole3 = () => {
-    this.setState({
-      numeroDeCliques3: this.state.numeroDeCliques3 + 1
-    })
+    this.setState((stateAnterior) => ({
+      numeroDeCliques3: stateAnterior.numeroDeCliques3 + 1
+    }))
     console.log('clicou3')
   }
 
@@ -41,9 +41,9 @@ class App extends React.Component {
 
   render() {
     return <div>
-      <button onClick={this.imprimirConsole1}>{this.state.numeroDeCliques1}</button>
-      <button onClick={this.imprimirConsole2}>{this.state.numeroDeCliques2}</button>
-      <button onClick={this.imprimirConsole3}>{this.state.numeroDeCliques3}</button>
+      <button onClick={this.imprimirConsole1}>{`Botão 1 cliques: ${this.state.numeroDeCliques1}`}</button>
+      <button onClick={this.imprimirConsole2}>{`Botão 2 cliques: ${this.state.numeroDeCliques2}`}</button>
+      <button onClick={this.imprimirConsole3}>{`Botão 3 cliques: ${this.state.numeroDeCliques3}`}</button>
       <button onClick={this.limparBotoes}>Limpar tudo</button>
    </div>
   }
